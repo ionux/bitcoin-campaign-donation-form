@@ -19,12 +19,12 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-This is a simple drop-in form to allow a political campaign to accept bitcoin donations using the BitPay service.
+<em>This is a simple drop-in form to allow a political campaign to accept bitcoin donations using the BitPay service.</em>
 
 
 Installation
 ------------
-Download the zip file comprising index.php, error.png and the two library files. Create a direcory on your webserver and upload these files to that directory.  Since this package contains an index file, DO NOT upload it to the root folder for your website or it will overwrite your existing index page.  You must create a subfolder and upload these form files there!
+Download the zip file comprising index.php and the two library files. Create a direcory on your webserver and upload these files to that directory.  Since this package contains an index file, DO NOT upload it to the root folder for your website or it will overwrite your existing index page.  You must create a subfolder and upload these form files there!
 
 For example, you could create a /bitcoin folder and upload the files there so the web address for the donation form would be:
 
