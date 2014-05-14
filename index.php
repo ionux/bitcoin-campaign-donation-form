@@ -121,9 +121,7 @@ if(!$error)
     </style>
     <!--[if lt IE 7]>
     <style media="screen" type="text/css">
-    .col1 {
-	    width:100%;
-	}
+    .col1 {width:100%;}
     </style>
     <![endif]-->
     </head>
