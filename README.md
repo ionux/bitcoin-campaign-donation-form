@@ -30,7 +30,7 @@ For example, you could create a /bitcoin folder and upload the files there so th
 
 <pre>http://your_web_site_address/bitcoin/</pre>
 
-Next, on your main campaign website create a new post telling your supporters you now support Bitcoin donations and link to the donation form.  That's all there is to it! :D
+Next, on your main campaign website create a new post telling your supporters you now support Bitcoin donations and link to the donation form.  That's all there is to it!
 
 
 Configuration
