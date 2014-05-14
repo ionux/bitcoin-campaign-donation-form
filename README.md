@@ -43,6 +43,7 @@ a. Be sure the API key string is inside the single quote marks.<br />
 a. Be sure the API key string is inside the single quote marks.<br />
 4. Save the file.
 5. If you have edited this file outside of your webserver (like on your desktop or laptop), upload the new file to the form donation directory you created upon installation.
+6. You or your web developer may personalize the index.php page with specific verbage, colors, fonts, images, etc... to better integrate the donation form with the look & feel of your campaign website.  However, DO NOT change anything above the opening html tag or the form may not function correctly.
 
 <i><strong>Note:</strong> The other options in this file are pre-set to values that make the most sense for this usage scenario. Unless you absolutely know what you are doing, you should keep these values the same.</i>
 
