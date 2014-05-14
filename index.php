@@ -80,186 +80,43 @@ if(!$error)
 
 ?>
 <html>
-    <head>
-        <title>Bitcoin Campaign Donation Form</title>
-        <meta name="description" content="This is a simple drop-in form to allow a political campaign to accept bitcoin donations using the BitPay service.." />
-        <meta name="keywords" content="bitcoin, campaign, donation, form, political, support" />
-        <link href='//fonts.googleapis.com/css?family=Ubuntu+Mono:700|Ubuntu:300,400,400italic,500' rel='stylesheet' type='text/css'>
-        <style type="text/css">
+  <head>
+    <title>Bitcoin Campaign Donation Form</title>
+    <meta name="description" content="This is a simple drop-in form to allow a political campaign to accept bitcoin donations using the BitPay service.." />
+    <meta name="keywords" content="bitcoin, campaign, donation, form, political, support" />
+    <link href='//fonts.googleapis.com/css?family=Ubuntu+Mono:700|Ubuntu:300,400,400italic,500' rel='stylesheet' type='text/css'>
+    <style type="text/css">
     /* <!-- */
-    body {
-        margin:0;
-        padding:0;
-        border:0;
-        width:100%;
-        background:#002855;
-        font-family: 'Ubuntu';
-        min-width:600px;
-		font-size:90%;
-    }
-	a {
-    	color:#369;
-	}
-	a:hover {
-		color:#fff;
-		background:#369;
-		text-decoration:none;
-	}
-    h1, h2, h3 {
-        margin:.8em 0 .2em 0;
-        padding:0;
-    }
-    p {
-        margin:.4em 0 .8em 0;
-        padding:0;
-    }
-	img {
-		margin:10px 0 5px;
-	}
-    input {
-        border-radius:4px;
-        height: 30px;
-        width:  300px;
-        font-size: 14pt;
-        font-family: 'Ubuntu';
-    }
-    select {
-        width: 240px;
-        height: 34px;
-        overflow: hidden;
-        border: 1px solid #ccc;
-    }
-    #header {
-        clear:both;
-        float:left;
-        width:100%;
-    }
-	#header {
-		border-bottom:0px solid #000;
-        background:#FFCC00;
-        padding-top: 5px;
-        padding-bottom: 10px;
-	}
-	#header p,
-	#header h1,
-	#header h2 {
-	    padding:.4em 15px 0 15px;
-        margin:0;
-	}
-	#header ul {
-	    clear:left;
-	    float:left;
-	    width:100%;
-	    list-style:none;
-	    margin:10px 0 0 0;
-	    padding:0;
-	}
-	#header ul li {
-	    display:inline;
-	    list-style:none;
-	    margin:0;
-	    padding:0;
-	}
-	#header ul li a {
-	    display:block;
-	    float:left;
-	    margin:0 0 0 1px;
-	    padding:3px 10px;
-	    text-align:center;
-	    background:#ffffff;
-	    color:#000;
-	    text-decoration:none;
-	    position:relative;
-	    left:15px;
-		line-height:1.3em;
-	}
-	#header ul li a:hover {
-	    background:#369;
-		color:#fff;
-	}
-	#header ul li a.active,
-	#header ul li a.active:hover {
-	    color:#fff;
-	    background:#000;
-	    font-weight:bold;
-	}
-	#header ul li a span {
-	    display:block;
-	}
-	#layoutdims {
-		clear:both;
-		background:#f3f3f3;
-		border-top:0px solid #000;
-		margin:0;
-		padding:6px 15px !important;
-		text-align:right;
-	}
-	.colmask {
-		position:relative;
-	    clear:both;
-	    float:left;
-        width:100%;
-		overflow:hidden;
-	}
-	.holygrail {
-	    background:#002855;
-	}
-    .holygrail .colmid {
-        float:left;
-        width:200%;
-        margin-left:-200px;
-        position:relative;
-        right:100%;
-        background:#ffffff;
-    }
-    .holygrail .colleft {
-        float:left;
-        width:100%;
-        margin-left:-50%;
-        position:relative;
-        left:400px;
-        background:#002855;
-    }
-    .holygrail .col1wrap {
-        float:left;
-	    width:50%;
-	    position:relative;
-	    right:200px;
-	    padding-bottom:1em;
-	}
-	.holygrail .col1 {
-        margin:0 215px;
-        position:relative;
-	    left:200%;
-	    overflow:hidden;
-	}
-    .holygrail .col2 {
-        float:left;
-        float:right;
-        width:200px;
-        position:relative;
-        right:15px;
-    }
-    .holygrail .col3 {
-        float:left;
-        float:right;
-        width:200px;
-        margin-right:45px;
-        position:relative;
-        left:50%;
-    }
-	#footer {
-        clear:both;
-        float:left;
-        width:100%;
-		border-top:50px solid #002855;
-        background:#002855;
-        font-size: 10pt;
-    }
-    #footer p {
-        padding:10px;
-        margin:0;
-    }
+    /* CSS adapted from http://matthewjamestaylor.com/blog/ultimate-3-column-holy-grail-pixels.htm */
+    body {margin:0;padding:0;border:0;width:100%;background:#002855;font-family: 'Ubuntu', sans-serif;min-width:600px;font-size:90%;}
+    a {color:#369;}
+    a:hover {color:#fff;background:#369;text-decoration:none;}
+    h1, h2, h3 {margin:.8em 0 .2em 0;padding:0;}
+    p {margin:.4em 0 .8em 0;padding:0;}
+    img {margin:10px 0 5px;}
+    input {border-radius:4px;height: 30px;width: 300px;font-size: 14pt;font-family: 'Ubuntu', sans-serif;}
+    select {width: 240px;height: 34px;overflow: hidden;border: 1px solid #ccc;}
+    #header {clear:both;float:left;width:100%;}
+    #header {border-bottom:0px solid #000;background:#FFCC00;padding-top: 15px;padding-bottom: 15px;}
+    #header p, #header h1, #header h2 {padding:.4em 15px 0 15px;margin:0;}
+    #header ul {clear:left;float:left;width:100%;list-style:none;margin:10px 0 0 0;padding:0;}
+    #header ul li {display:inline;list-style:none;margin:0;padding:0;}
+    #header ul li a {display:block;float:left;margin:0 0 0 1px;padding:3px 10px;text-align:center;background:#ffffff;color:#000;text-decoration:none;position:relative;left:15px;line-height:1.3em;}
+    #header ul li a:hover {background:#369;color:#fff;}
+    #header ul li a.active,
+    #header ul li a.active:hover {color:#fff;background:#000;font-weight:bold;}
+    #header ul li a span {display:block;}
+    #layoutdims {clear:both;background:#f3f3f3;border-top:0px solid #000;margin:0;padding:6px 15px !important;text-align:right;}
+    #footer {clear:both;float:left;width:100%;border-top:50px solid #002855;background:#002855;font-size: 10pt;}
+    #footer p {padding:10px;margin:0;}
+    .colmask {position:relative;clear:both;float:left;width:100%;overflow:hidden;}
+    .holygrail {background:#002855;}
+    .holygrail .colmid {float:left;width:200%;margin-left:-200px;position:relative;right:100%;background:#ffffff;}
+    .holygrail .colleft {float:left;width:100%;margin-left:-50%;position:relative;left:400px;background:#002855;}
+    .holygrail .col1wrap {float:left;width:50%;position:relative;right:200px;padding-bottom:1em;}
+    .holygrail .col1 {margin:0 215px;position:relative;left:200%;overflow:hidden;}
+    .holygrail .col2 {float:left;float:right;width:200px;position:relative;right:15px;}
+    .holygrail .col3 {float:left;float:right;width:200px;margin-right:45px;position:relative;left:50%;}
     /* --> */
     </style>
     <!--[if lt IE 7]>
@@ -271,13 +128,13 @@ if(!$error)
     <![endif]-->
     </head>
     <body>
-    <?php if($error) echo '<div id="header"><center><img src="error.png" height="24" width="24" alt="Error Icon" /><br><b>Error: ' . $msg . '</b></center></div>'; $error=false; $msg=''; ?>
+    <?php if($error) echo '<div id="header"><center><b>Error: ' . $msg . '</b></center></div>'; $error=false; $msg=''; ?>
     <div class="colmask holygrail">
     <div class="colmid">
         <div class="colleft">
             <div class="col1wrap">
                 <div class="col1">
-					<h2>Thank you for supporting our campaign with Bitcoin! Your support matters!</h2>
+		    <h2>Thank you for supporting our campaign with Bitcoin! Your support matters!</h2>
                     <form method="post" action="index.php">
                     <table border="0">
                     <tr style="padding:15px;"><td style="padding:15px;">Contribution Amount:</td><td style="padding:15px;"><select name="amt" style="font-size: 14pt;">
@@ -384,13 +241,13 @@ if(!$error)
                 </div>
             </div>
             <div class="col2">
-				<h2></h2>
+		<h2></h2>
                 <p></p>
             </div>
             <div class="col3">
                 <h2></h2>
-				<p></p>
-				<h3></h3>
+		<p></p>
+		<h3></h3>
 			</div>
 		</div>
 	</div>
