@@ -64,8 +64,6 @@ https://bitpay.com/downloads/bitpayApi.pdf
 
 Some web servers have outdated root CA certificates and will cause this curl error: "SSL certificate problem, verify that the CA cert is OK. Details: error:14090086:SSL routines:SSL3_GET_SERVER_CERTIFICATE:certificate verify failed'".  The fix is to contact your hosting provider or server administrator and request a root CA cert update.
 
-If you have turned on logging in the options file, the log file is named 'bplog.txt' and can be found in the same directory as the donation form files.  Checking this log file will give you exact responses from the BitPay network, in case of failures.
-
 Check the version of this donation form against the official repository to ensure you are using the latest version. Your issue might have been addressed in a newer version.  You can always find the latest version here: https://github.com/ionux/bitcoin-campaign-donation-form/
 
 If all else fails, send an email describing your issue *in detail* to support@bitpay.com and attach the bplog.txt file (if present).
