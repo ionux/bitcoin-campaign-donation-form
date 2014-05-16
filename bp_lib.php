@@ -37,26 +37,7 @@ function bpLog($contents) {
   global $bpOptions;
   
   try {
-    if(isset($bpOptions['logFile']) && $bpOptions['logFile'] != '') {
-      $file = dirname(__FILE__).$bpOptions['logFile'];
-    } else {
-      // Fallback to using a default logfile name in case the variable is
-      // missing or not set.
-      $file = dirname(__FILE__).'/bplog.txt';
-    }
-
-    file_put_contents($file, date('m-d H:i:s').": ", FILE_APPEND);
-
-    if (is_array($contents))
-      $contents = var_export($contents, true);    
-    else if (is_object($contents)) {
-      if(function_exists('json_encode'))
-        $contents = json_encode($contents);
-      else
-        $contents = serialize($contents);
-    }
-
-    file_put_contents($file, $contents."\n", FILE_APPEND);
+    error_log($contents);
 
   } catch (Exception $e) {
     echo 'Error: ' . $e->getMessage();
