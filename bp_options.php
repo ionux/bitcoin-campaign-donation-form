@@ -34,6 +34,12 @@ $bpOptions['apiKey'] = '';
 $bpOptions['redirectURL'] = '';
 
 
+// Change to 'true' if you want to use the testnet development environment at
+// test.bitpay.com. See
+// http://blog.bitpay.com/2014/05/13/introducing-the-bitpay-test-environment.html
+// for details how to use test coins and testnet.
+$bpOptions['testnet'] = false;
+
 
 
 ////////////////////////////////////////////////////////////////////////////////////
