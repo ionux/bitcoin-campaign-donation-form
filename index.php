@@ -136,90 +136,90 @@ if(!$error)
                     <form method="post" action="index.php">
                     <table border="0">
                     <tr style="padding:15px;"><td style="padding:15px;">Contribution Amount:</td><td style="padding:15px;"><select name="amt" style="font-size: 14pt;">
-                                                            <option value="10"<?php if($_POST['amt'] == '10') echo ' selected'; ?>>$10</option>
-                                                            <option value="20"<?php if($_POST['amt'] == '20') echo ' selected'; ?>>$20</option>
-                                                            <option value="30"<?php if($_POST['amt'] == '30') echo ' selected'; ?>>$30</option>
-                                                            <option value="40"<?php if($_POST['amt'] == '40') echo ' selected'; ?>>$40</option>
-                                                            <option value="50"<?php if($_POST['amt'] == '50') echo ' selected'; ?>>$50</option>
-                                                            <option value="60"<?php if($_POST['amt'] == '60') echo ' selected'; ?>>$60</option>
-                                                            <option value="70"<?php if($_POST['amt'] == '70') echo ' selected'; ?>>$70</option>
-                                                            <option value="80"<?php if($_POST['amt'] == '80') echo ' selected'; ?>>$80</option>
-                                                            <option value="90"<?php if($_POST['amt'] == '90') echo ' selected'; ?>>$90</option>
-                                                            <option value="100"<?php if($_POST['amt'] == '100') echo ' selected'; ?>>$100</option>
+                                                            <option value="10"<?php if(isset($_POST['amt']) && $_POST['amt'] == '10') echo ' selected'; ?>>$10</option>
+                                                            <option value="20"<?php if(isset($_POST['amt']) && $_POST['amt'] == '20') echo ' selected'; ?>>$20</option>
+                                                            <option value="30"<?php if(isset($_POST['amt']) && $_POST['amt'] == '30') echo ' selected'; ?>>$30</option>
+                                                            <option value="40"<?php if(isset($_POST['amt']) && $_POST['amt'] == '40') echo ' selected'; ?>>$40</option>
+                                                            <option value="50"<?php if(isset($_POST['amt']) && $_POST['amt'] == '50') echo ' selected'; ?>>$50</option>
+                                                            <option value="60"<?php if(isset($_POST['amt']) && $_POST['amt'] == '60') echo ' selected'; ?>>$60</option>
+                                                            <option value="70"<?php if(isset($_POST['amt']) && $_POST['amt'] == '70') echo ' selected'; ?>>$70</option>
+                                                            <option value="80"<?php if(isset($_POST['amt']) && $_POST['amt'] == '80') echo ' selected'; ?>>$80</option>
+                                                            <option value="90"<?php if(isset($_POST['amt']) && $_POST['amt'] == '90') echo ' selected'; ?>>$90</option>
+                                                            <option value="100"<?php if(isset($_POST['amt']) && $_POST['amt'] == '100') echo ' selected'; ?>>$100</option>
                                                          </select></td></tr>
-                    <tr style="padding:15px;"><td style="padding:15px;">Full Name:</td><td style="padding:15px;"><input type="text" name="fullname" value="<?php echo $_POST['fullname']; ?>"></td></tr>
-                    <tr style="padding:15px;"><td style="padding:15px;">Address 1:</td><td style="padding:15px;"><input type="text" name="addr1" value="<?php echo $_POST['addr1']; ?>"></td></tr>
-                    <tr style="padding:15px;"><td style="padding:15px;">Address 2:</td><td style="padding:15px;"><input type="text" name="addr2" value="<?php echo $_POST['addr2']; ?>"></td></tr>
-                    <tr style="padding:15px;"><td style="padding:15px;">City:</td><td style="padding:15px;"><input type="text" name="city" value="<?php echo $_POST['city']; ?>"></td></tr>
+                    <tr style="padding:15px;"><td style="padding:15px;">Full Name:</td><td style="padding:15px;"><input type="text" name="fullname" value="<?php if(isset($_POST['fullname'])) echo $_POST['fullname']; ?>"></td></tr>
+                    <tr style="padding:15px;"><td style="padding:15px;">Address 1:</td><td style="padding:15px;"><input type="text" name="addr1" value="<?php if(isset($_POST['addr1'])) echo $_POST['addr1']; ?>"></td></tr>
+                    <tr style="padding:15px;"><td style="padding:15px;">Address 2:</td><td style="padding:15px;"><input type="text" name="addr2" value="<?php if(isset($_POST['addr2'])) echo $_POST['addr2']; ?>"></td></tr>
+                    <tr style="padding:15px;"><td style="padding:15px;">City:</td><td style="padding:15px;"><input type="text" name="city" value="<?php if(isset($_POST['city'])) echo $_POST['city']; ?>"></td></tr>
                     <tr style="padding:15px;"><td style="padding:15px;">State:</td><td style="padding:15px;">
                     <select name="state" style="font-size: 14pt;">
-    <option value="AL"<?php if($_POST['state'] == 'AL') echo ' selected'; ?>>Alabama</option>
-	<option value="AK"<?php if($_POST['state'] == 'AK') echo ' selected'; ?>>Alaska</option>
-	<option value="AZ"<?php if($_POST['state'] == 'AZ') echo ' selected'; ?>>Arizona</option>
-	<option value="AR"<?php if($_POST['state'] == 'AR') echo ' selected'; ?>>Arkansas</option>
-	<option value="CA"<?php if($_POST['state'] == 'CA') echo ' selected'; ?>>California</option>
-	<option value="CO"<?php if($_POST['state'] == 'CO') echo ' selected'; ?>>Colorado</option>
-	<option value="CT"<?php if($_POST['state'] == 'CT') echo ' selected'; ?>>Connecticut</option>
-	<option value="DE"<?php if($_POST['state'] == 'DE') echo ' selected'; ?>>Delaware</option>
-	<option value="DC"<?php if($_POST['state'] == 'DC') echo ' selected'; ?>>District Of Columbia</option>
-	<option value="FL"<?php if($_POST['state'] == 'FL') echo ' selected'; ?>>Florida</option>
-	<option value="GA"<?php if($_POST['state'] == 'GA') echo ' selected'; ?>>Georgia</option>
-	<option value="HI"<?php if($_POST['state'] == 'HI') echo ' selected'; ?>>Hawaii</option>
-	<option value="ID"<?php if($_POST['state'] == 'ID') echo ' selected'; ?>>Idaho</option>
-	<option value="IL"<?php if($_POST['state'] == 'IL') echo ' selected'; ?>>Illinois</option>
-	<option value="IN"<?php if($_POST['state'] == 'IN') echo ' selected'; ?>>Indiana</option>
-	<option value="IA"<?php if($_POST['state'] == 'IA') echo ' selected'; ?>>Iowa</option>
-	<option value="KS"<?php if($_POST['state'] == 'KS') echo ' selected'; ?>>Kansas</option>
-	<option value="KY"<?php if($_POST['state'] == 'KY') echo ' selected'; ?>>Kentucky</option>
-	<option value="LA"<?php if($_POST['state'] == 'LA') echo ' selected'; ?>>Louisiana</option>
-	<option value="ME"<?php if($_POST['state'] == 'ME') echo ' selected'; ?>>Maine</option>
-	<option value="MD"<?php if($_POST['state'] == 'MD') echo ' selected'; ?>>Maryland</option>
-	<option value="MA"<?php if($_POST['state'] == 'MA') echo ' selected'; ?>>Massachusetts</option>
-	<option value="MI"<?php if($_POST['state'] == 'MI') echo ' selected'; ?>>Michigan</option>
-	<option value="MN"<?php if($_POST['state'] == 'MN') echo ' selected'; ?>>Minnesota</option>
-	<option value="MS"<?php if($_POST['state'] == 'MS') echo ' selected'; ?>>Mississippi</option>
-	<option value="MO"<?php if($_POST['state'] == 'MO') echo ' selected'; ?>>Missouri</option>
-	<option value="MT"<?php if($_POST['state'] == 'MT') echo ' selected'; ?>>Montana</option>
-	<option value="NE"<?php if($_POST['state'] == 'NE') echo ' selected'; ?>>Nebraska</option>
-	<option value="NV"<?php if($_POST['state'] == 'NV') echo ' selected'; ?>>Nevada</option>
-	<option value="NH"<?php if($_POST['state'] == 'NH') echo ' selected'; ?>>New Hampshire</option>
-	<option value="NJ"<?php if($_POST['state'] == 'NJ') echo ' selected'; ?>>New Jersey</option>
-	<option value="NM"<?php if($_POST['state'] == 'NM') echo ' selected'; ?>>New Mexico</option>
-	<option value="NY"<?php if($_POST['state'] == 'NY') echo ' selected'; ?>>New York</option>
-	<option value="NC"<?php if($_POST['state'] == 'NC') echo ' selected'; ?>>North Carolina</option>
-	<option value="ND"<?php if($_POST['state'] == 'ND') echo ' selected'; ?>>North Dakota</option>
-	<option value="OH"<?php if($_POST['state'] == 'OH') echo ' selected'; ?>>Ohio</option>
-	<option value="OK"<?php if($_POST['state'] == 'OK') echo ' selected'; ?>>Oklahoma</option>
-	<option value="OR"<?php if($_POST['state'] == 'OR') echo ' selected'; ?>>Oregon</option>
-	<option value="PA"<?php if($_POST['state'] == 'PA') echo ' selected'; ?>>Pennsylvania</option>
-	<option value="RI"<?php if($_POST['state'] == 'RI') echo ' selected'; ?>>Rhode Island</option>
-	<option value="SC"<?php if($_POST['state'] == 'SC') echo ' selected'; ?>>South Carolina</option>
-	<option value="SD"<?php if($_POST['state'] == 'SD') echo ' selected'; ?>>South Dakota</option>
-	<option value="TN"<?php if($_POST['state'] == 'TN') echo ' selected'; ?>>Tennessee</option>
-	<option value="TX"<?php if($_POST['state'] == 'TX') echo ' selected'; ?>>Texas</option>
-	<option value="UT"<?php if($_POST['state'] == 'UT') echo ' selected'; ?>>Utah</option>
-	<option value="VT"<?php if($_POST['state'] == 'VT') echo ' selected'; ?>>Vermont</option>
-	<option value="VA"<?php if($_POST['state'] == 'VA') echo ' selected'; ?>>Virginia</option>
-	<option value="WA"<?php if($_POST['state'] == 'WA') echo ' selected'; ?>>Washington</option>
-	<option value="WV"<?php if($_POST['state'] == 'WV') echo ' selected'; ?>>West Virginia</option>
-	<option value="WI"<?php if($_POST['state'] == 'WI') echo ' selected'; ?>>Wisconsin</option>
-	<option value="WY"<?php if($_POST['state'] == 'WY') echo ' selected'; ?>>Wyoming</option>
-    <option value="AS"<?php if($_POST['state'] == 'AS') echo ' selected'; ?>>American Samoa</option>
-    <option value="GU"<?php if($_POST['state'] == 'GU') echo ' selected'; ?>>Guam</option>
-    <option value="MP"<?php if($_POST['state'] == 'MP') echo ' selected'; ?>>Northern Mariana Islands</option>
-    <option value="PR"<?php if($_POST['state'] == 'PR') echo ' selected'; ?>>Puerto Rico</option>
-    <option value="UM"<?php if($_POST['state'] == 'UM') echo ' selected'; ?>>United States Minor Outlying Islands</option>
-    <option value="VI"<?php if($_POST['state'] == 'VI') echo ' selected'; ?>>Virgin Islands</option>
-    <option value="AA"<?php if($_POST['state'] == 'AA') echo ' selected'; ?>>Armed Forces Americas</option>
-    <option value="AP"<?php if($_POST['state'] == 'AP') echo ' selected'; ?>>Armed Forces Pacific</option>
-    <option value="AE"<?php if($_POST['state'] == 'AE') echo ' selected'; ?>>Armed Forces Others</option>
+    <option value="AL"<?php if(isset($_POST['state']) && $_POST['state'] == 'AL') echo ' selected'; ?>>Alabama</option>
+	<option value="AK"<?php if(isset($_POST['state']) && $_POST['state'] == 'AK') echo ' selected'; ?>>Alaska</option>
+	<option value="AZ"<?php if(isset($_POST['state']) && $_POST['state'] == 'AZ') echo ' selected'; ?>>Arizona</option>
+	<option value="AR"<?php if(isset($_POST['state']) && $_POST['state'] == 'AR') echo ' selected'; ?>>Arkansas</option>
+	<option value="CA"<?php if(isset($_POST['state']) && $_POST['state'] == 'CA') echo ' selected'; ?>>California</option>
+	<option value="CO"<?php if(isset($_POST['state']) && $_POST['state'] == 'CO') echo ' selected'; ?>>Colorado</option>
+	<option value="CT"<?php if(isset($_POST['state']) && $_POST['state'] == 'CT') echo ' selected'; ?>>Connecticut</option>
+	<option value="DE"<?php if(isset($_POST['state']) && $_POST['state'] == 'DE') echo ' selected'; ?>>Delaware</option>
+	<option value="DC"<?php if(isset($_POST['state']) && $_POST['state'] == 'DC') echo ' selected'; ?>>District Of Columbia</option>
+	<option value="FL"<?php if(isset($_POST['state']) && $_POST['state'] == 'FL') echo ' selected'; ?>>Florida</option>
+	<option value="GA"<?php if(isset($_POST['state']) && $_POST['state'] == 'GA') echo ' selected'; ?>>Georgia</option>
+	<option value="HI"<?php if(isset($_POST['state']) && $_POST['state'] == 'HI') echo ' selected'; ?>>Hawaii</option>
+	<option value="ID"<?php if(isset($_POST['state']) && $_POST['state'] == 'ID') echo ' selected'; ?>>Idaho</option>
+	<option value="IL"<?php if(isset($_POST['state']) && $_POST['state'] == 'IL') echo ' selected'; ?>>Illinois</option>
+	<option value="IN"<?php if(isset($_POST['state']) && $_POST['state'] == 'IN') echo ' selected'; ?>>Indiana</option>
+	<option value="IA"<?php if(isset($_POST['state']) && $_POST['state'] == 'IA') echo ' selected'; ?>>Iowa</option>
+	<option value="KS"<?php if(isset($_POST['state']) && $_POST['state'] == 'KS') echo ' selected'; ?>>Kansas</option>
+	<option value="KY"<?php if(isset($_POST['state']) && $_POST['state'] == 'KY') echo ' selected'; ?>>Kentucky</option>
+	<option value="LA"<?php if(isset($_POST['state']) && $_POST['state'] == 'LA') echo ' selected'; ?>>Louisiana</option>
+	<option value="ME"<?php if(isset($_POST['state']) && $_POST['state'] == 'ME') echo ' selected'; ?>>Maine</option>
+	<option value="MD"<?php if(isset($_POST['state']) && $_POST['state'] == 'MD') echo ' selected'; ?>>Maryland</option>
+	<option value="MA"<?php if(isset($_POST['state']) && $_POST['state'] == 'MA') echo ' selected'; ?>>Massachusetts</option>
+	<option value="MI"<?php if(isset($_POST['state']) && $_POST['state'] == 'MI') echo ' selected'; ?>>Michigan</option>
+	<option value="MN"<?php if(isset($_POST['state']) && $_POST['state'] == 'MN') echo ' selected'; ?>>Minnesota</option>
+	<option value="MS"<?php if(isset($_POST['state']) && $_POST['state'] == 'MS') echo ' selected'; ?>>Mississippi</option>
+	<option value="MO"<?php if(isset($_POST['state']) && $_POST['state'] == 'MO') echo ' selected'; ?>>Missouri</option>
+	<option value="MT"<?php if(isset($_POST['state']) && $_POST['state'] == 'MT') echo ' selected'; ?>>Montana</option>
+	<option value="NE"<?php if(isset($_POST['state']) && $_POST['state'] == 'NE') echo ' selected'; ?>>Nebraska</option>
+	<option value="NV"<?php if(isset($_POST['state']) && $_POST['state'] == 'NV') echo ' selected'; ?>>Nevada</option>
+	<option value="NH"<?php if(isset($_POST['state']) && $_POST['state'] == 'NH') echo ' selected'; ?>>New Hampshire</option>
+	<option value="NJ"<?php if(isset($_POST['state']) && $_POST['state'] == 'NJ') echo ' selected'; ?>>New Jersey</option>
+	<option value="NM"<?php if(isset($_POST['state']) && $_POST['state'] == 'NM') echo ' selected'; ?>>New Mexico</option>
+	<option value="NY"<?php if(isset($_POST['state']) && $_POST['state'] == 'NY') echo ' selected'; ?>>New York</option>
+	<option value="NC"<?php if(isset($_POST['state']) && $_POST['state'] == 'NC') echo ' selected'; ?>>North Carolina</option>
+	<option value="ND"<?php if(isset($_POST['state']) && $_POST['state'] == 'ND') echo ' selected'; ?>>North Dakota</option>
+	<option value="OH"<?php if(isset($_POST['state']) && $_POST['state'] == 'OH') echo ' selected'; ?>>Ohio</option>
+	<option value="OK"<?php if(isset($_POST['state']) && $_POST['state'] == 'OK') echo ' selected'; ?>>Oklahoma</option>
+	<option value="OR"<?php if(isset($_POST['state']) && $_POST['state'] == 'OR') echo ' selected'; ?>>Oregon</option>
+	<option value="PA"<?php if(isset($_POST['state']) && $_POST['state'] == 'PA') echo ' selected'; ?>>Pennsylvania</option>
+	<option value="RI"<?php if(isset($_POST['state']) && $_POST['state'] == 'RI') echo ' selected'; ?>>Rhode Island</option>
+	<option value="SC"<?php if(isset($_POST['state']) && $_POST['state'] == 'SC') echo ' selected'; ?>>South Carolina</option>
+	<option value="SD"<?php if(isset($_POST['state']) && $_POST['state'] == 'SD') echo ' selected'; ?>>South Dakota</option>
+	<option value="TN"<?php if(isset($_POST['state']) && $_POST['state'] == 'TN') echo ' selected'; ?>>Tennessee</option>
+	<option value="TX"<?php if(isset($_POST['state']) && $_POST['state'] == 'TX') echo ' selected'; ?>>Texas</option>
+	<option value="UT"<?php if(isset($_POST['state']) && $_POST['state'] == 'UT') echo ' selected'; ?>>Utah</option>
+	<option value="VT"<?php if(isset($_POST['state']) && $_POST['state'] == 'VT') echo ' selected'; ?>>Vermont</option>
+	<option value="VA"<?php if(isset($_POST['state']) && $_POST['state'] == 'VA') echo ' selected'; ?>>Virginia</option>
+	<option value="WA"<?php if(isset($_POST['state']) && $_POST['state'] == 'WA') echo ' selected'; ?>>Washington</option>
+	<option value="WV"<?php if(isset($_POST['state']) && $_POST['state'] == 'WV') echo ' selected'; ?>>West Virginia</option>
+	<option value="WI"<?php if(isset($_POST['state']) && $_POST['state'] == 'WI') echo ' selected'; ?>>Wisconsin</option>
+	<option value="WY"<?php if(isset($_POST['state']) && $_POST['state'] == 'WY') echo ' selected'; ?>>Wyoming</option>
+    <option value="AS"<?php if(isset($_POST['state']) && $_POST['state'] == 'AS') echo ' selected'; ?>>American Samoa</option>
+    <option value="GU"<?php if(isset($_POST['state']) && $_POST['state'] == 'GU') echo ' selected'; ?>>Guam</option>
+    <option value="MP"<?php if(isset($_POST['state']) && $_POST['state'] == 'MP') echo ' selected'; ?>>Northern Mariana Islands</option>
+    <option value="PR"<?php if(isset($_POST['state']) && $_POST['state'] == 'PR') echo ' selected'; ?>>Puerto Rico</option>
+    <option value="UM"<?php if(isset($_POST['state']) && $_POST['state'] == 'UM') echo ' selected'; ?>>United States Minor Outlying Islands</option>
+    <option value="VI"<?php if(isset($_POST['state']) && $_POST['state'] == 'VI') echo ' selected'; ?>>Virgin Islands</option>
+    <option value="AA"<?php if(isset($_POST['state']) && $_POST['state'] == 'AA') echo ' selected'; ?>>Armed Forces Americas</option>
+    <option value="AP"<?php if(isset($_POST['state']) && $_POST['state'] == 'AP') echo ' selected'; ?>>Armed Forces Pacific</option>
+    <option value="AE"<?php if(isset($_POST['state']) && $_POST['state'] == 'AE') echo ' selected'; ?>>Armed Forces Others</option>
 </select>
                     </td></tr>
-                    <tr style="padding:15px;"><td style="padding:15px;">Zip Code:</td><td style="padding:15px;"><input type="text" name="zip" value="<?php echo $_POST['zip']; ?>"></td></tr>
-                    <tr style="padding:15px;"><td style="padding:15px;">Email Address:</td><td style="padding:15px;"><input type="text" name="email" value="<?php echo $_POST['email']; ?>"></td></tr>
-                    <tr style="padding:15px;"><td style="padding:15px;">Phone Number:</td><td style="padding:15px;"><input type="text" name="phone" value="<?php echo $_POST['phone']; ?>"></td></tr>
-                    <tr style="padding:15px;"><td style="padding:15px;">Employer:</td><td style="padding:15px;"><input type="text" name="employer" value="<?php echo $_POST['employer']; ?>"></td></tr>
-                    <tr style="padding:15px;"><td style="padding:15px;">Occupation:</td><td style="padding:15px;"><input type="text" name="occupation" value="<?php echo $_POST['occupation']; ?>"></td></tr>
+                    <tr style="padding:15px;"><td style="padding:15px;">Zip Code:</td><td style="padding:15px;"><input type="text" name="zip" value="<?php if(isset($_POST['zip'])) echo $_POST['zip']; ?>"></td></tr>
+                    <tr style="padding:15px;"><td style="padding:15px;">Email Address:</td><td style="padding:15px;"><input type="text" name="email" value="<?php if(isset($_POST['email'])) echo $_POST['email']; ?>"></td></tr>
+                    <tr style="padding:15px;"><td style="padding:15px;">Phone Number:</td><td style="padding:15px;"><input type="text" name="phone" value="<?php if(isset($_POST['phone'])) echo $_POST['phone']; ?>"></td></tr>
+                    <tr style="padding:15px;"><td style="padding:15px;">Employer:</td><td style="padding:15px;"><input type="text" name="employer" value="<?php if(isset($_POST['employer'])) echo $_POST['employer']; ?>"></td></tr>
+                    <tr style="padding:15px;"><td style="padding:15px;">Occupation:</td><td style="padding:15px;"><input type="text" name="occupation" value="<?php if(isset($_POST['occupation'])) echo $_POST['occupation']; ?>"></td></tr>
                     </table>
                     <p><br></p>
                     <table border="0">
@@ -230,7 +230,7 @@ if(!$error)
                     <tr><td><input type="submit" name="submit" value="Submit" style="height: 44px; width: 104px; border-radius:4px;"></td></tr>
                     </table>
                     <input type="hidden" name="qqka" value="<?php echo base64_encode('donation_form'); ?>">
-                    <input type="hidden" name="fjqq" value="<?php echo $_SESSION['salt']; ?>">
+                    <input type="hidden" name="fjqq" value="<?php if(isset($_SESSION['salt'])) {echo $_SESSION['salt'];} else {$_SESSION['salt']=bin2hex(openssl_random_pseudo_bytes(16));echo $_SESSION['salt'];}?>">
                     </form>
                     <p><br></p>
                     <table border="0">
