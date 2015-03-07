@@ -1,7 +1,7 @@
 
 Description
 -----------
-<em>This is a simple drop-in form to allow a political campaign to accept bitcoin donations using the BitPay payment service. If you don't have a BitPay merchant account, you must sign up before you can use this form: https://bitpay.com</em>
+This is a simple drop-in form to allow a political campaign to accept bitcoin donations using the BitPay payment service. If you don't have a BitPay merchant account, you must sign up before you can use this form: https://bitpay.com
 
 
 Installation
