@@ -1,4 +1,3 @@
-
 Description
 -----------
 This is a simple drop-in form to allow a political campaign to accept bitcoin donations using the BitPay payment service. If you don't have a BitPay merchant account, you must sign up before you can use this form: https://bitpay.com
@@ -6,7 +5,7 @@ This is a simple drop-in form to allow a political campaign to accept bitcoin do
 
 Installation
 ------------
-Download the zip file comprising index.php, the CSS file and the two library files. Create a direcory on your webserver and upload these files to that directory.  Since this package contains an index file, DO NOT upload it to the root folder for your website or it will overwrite your existing index page.  You must create a subfolder and upload these form files there!
+Download the zip file comprising index.php, the CSS file and the two library files. Create a directory on your webserver and upload these files to that directory.  Since this package contains an index file, DO NOT upload it to the root folder for your website or it will overwrite your existing index page.  You must create a subfolder and upload these form files there!
 
 For example, you could create a /bitcoin folder and upload the files there so the web address for the donation form would be:
 
@@ -25,7 +24,7 @@ a. Be sure the API key string is inside the single quote marks.<br />
 a. Be sure the API key string is inside the single quote marks.<br />
 4. Save the file.
 5. If you have edited this file outside of your webserver (like on your desktop or laptop), upload the new file to the form donation directory you created upon installation.
-6. You or your web developer may personalize the index.php page with specific verbage, colors, fonts, images, etc... to better integrate the donation form with the look & feel of your campaign website.  However, DO NOT change anything above the opening html tag or the form may not function correctly.
+6. You or your web developer may personalize the index.php page with specific verbiage, colors, fonts, images, etc... to better integrate the donation form with the look & feel of your campaign website.  However, DO NOT change anything above the opening html tag or the form may not function correctly.
 
 <i><strong>Note:</strong> The other options in this file are pre-set to values that make the most sense for this usage scenario. Unless you absolutely know what you are doing, you should keep these values the same.</i>
 
