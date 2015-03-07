@@ -1,4 +1,6 @@
-<strong>(c)2014 BITPAY, INC.</strong>
+<strong>(c)2014-2014 BITPAY, INC.</strong>
+
+The MIT License (MIT)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,12 +21,12 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-<em>This is a simple drop-in form to allow a political campaign to accept bitcoin donations using the BitPay service.</em>
+<em>This is a simple drop-in form to allow a political campaign to accept bitcoin donations using the BitPay payment service. If you don't have a BitPay merchant account, you must sign up before you can use this form: https://bitpay.com</em>
 
 
 Installation
 ------------
-Download the zip file comprising index.php and the two library files. Create a direcory on your webserver and upload these files to that directory.  Since this package contains an index file, DO NOT upload it to the root folder for your website or it will overwrite your existing index page.  You must create a subfolder and upload these form files there!
+Download the zip file comprising index.php, the CSS file and the two library files. Create a direcory on your webserver and upload these files to that directory.  Since this package contains an index file, DO NOT upload it to the root folder for your website or it will overwrite your existing index page.  You must create a subfolder and upload these form files there!
 
 For example, you could create a /bitcoin folder and upload the files there so the web address for the donation form would be:
 
@@ -73,6 +75,9 @@ Version
 -------
 Version 1.0
 - Initial release 5/14/2014 -rich@bitpay.com
+
+Version 1.1
+- Update to make form parameters editable. 3/7/2015 -rich@bitpay.com
 
 
 Important Disclaimer
