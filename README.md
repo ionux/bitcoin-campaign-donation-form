@@ -1,4 +1,4 @@
-<strong>(c)2014-2014 BITPAY, INC.</strong>
+<strong>(c)2014-2015 BITPAY, INC.</strong>
 
 The MIT License (MIT)
 
