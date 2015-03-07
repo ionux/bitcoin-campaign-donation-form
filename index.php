@@ -1,8 +1,10 @@
 <?php
 
 /**
- * ©2014 BITPAY, INC.
- * 
+ * ©2014-2015 BITPAY, INC.
+ *
+ * The MIT License (MIT)
+ *
  * Permission is hereby granted to any person obtaining a copy of this software
  * and associated documentation for use and/or modification in association with
  * the bitpay.com service.
@@ -15,10 +17,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  * 
- * This is a simple drop-in form to allow a political campaign to accept bitcoin donations using the BitPay service.
+ * This is a simple drop-in form to allow a political campaign to accept bitcoin
+ * donations using the BitPay payment service. If you don't have a BitPay merchant
+ * account, you must sign up before you can use this form: https://bitpay.com
  *
- * Version 1.1, rich@bitpay.com
- * 
+ * Version 1.1, Rich Morgan <rich@bitpay.com>
  */
 
 ob_start();
